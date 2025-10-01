@@ -11,7 +11,6 @@ import Register from '../components/register'
 import Tasks from '../components/Tasks'
 import Add_tasks from '../components/Add_tasks'
 import Profile from '../components/Profile'
-import Protector_rutas from './Protector_rutas'
 import { useAuth } from '../context/AuthContext'
 import Comida from '../Pages/Comida'
 import SI_NO from '../Juegos/SI_NO'
@@ -33,7 +32,6 @@ function Rutas() {
         <Route path="/Regalo" element={<Regalo/>}/>,
         <Route path="/Rompecabezas" element={<Rompecabezas/>}/>,
 
-        <Route element={<Protector_rutas/>}/>
         <Route path="/Videojuegos" element={isAuthenticated ? <Games/>: <Navigate to='/login' />}/>,
         <Route path="/Peliculas" element={isAuthenticated ? <Movies/>: <Navigate to='/login' />}/>,
         <Route path="/Musicas" element={isAuthenticated ? <Musica/>: <Navigate to='/login' />}/>,
