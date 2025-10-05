@@ -36,16 +36,17 @@ export const AuthProvider = ({children}) => {
 const signin = async (user) => {
   try {
     const res = await loginRequest(user);
+    setUser(res.data); // ✅ Aquí guardas el usuario
     setIsAuthenticated(true);
-    console.log(res);
-    return true; // ✅ devuelve éxito
+    console.log("Usuario logueado:", res.data);
+    return true;
   } catch (error) {
     if (Array.isArray(error.response.data)) {
       setErrors(error.response.data);
     } else {
       setErrors([error.response.data.message]);
     }
-    return false; // ❌ devuelve fallo
+    return false;
   }
 };
 

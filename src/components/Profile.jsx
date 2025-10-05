@@ -7,7 +7,7 @@ function Profile() {
 
   return (
     <div className='bg-zinc-900 w-[475px] h-[217px] p-5'>
-      {isAuthenticated && user ? (
+      {isAuthenticated && user?(
         <div className='w-full h-max border-4 border-sky-700 text-center rounded-lg p-4 text-white text-lg'>
           <h1>User: {user?.username}</h1>
           <h1>Email: {user?.email}</h1>
