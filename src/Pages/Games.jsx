@@ -34,9 +34,9 @@ function Games() {
   return (
       <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-11 py-9 w-screen h-screen'>
          {items.map((items, index) => (
-          <div key={index} className='relative'>
+          <div key={index} className=''>
          <img className='rounded-lg w-[90%]'  src={items.img} alt="" />
-        <h1 className='absolute top-[85%] left-[12%] text-xl bg-[rgba(0,0,0,0.535)] text-white rounded-lg'>
+        <h1 className='text-xl bg-[rgba(0,0,0,0.535)] text-white rounded-lg'>
           {items.title}
         </h1>
 
