@@ -22,7 +22,6 @@ function Login() {
   };
 
   useEffect(() => {
-    // Solo redirige si está autenticado y no hay errores
     if (isAuthenticated && signinErrors.length === 0) {
       navigate("/");
     }
