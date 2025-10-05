@@ -24,7 +24,7 @@ function Movies() {
   ]
 
   const items2 = [
-  { title: "Dragones y Mazmorras", img: "https://img.rtve.es/imagenes/portada-del-libro-dragones-mazmorras-su-historia/1681895953264.jpg",Pista:'En tierras de magia y espada afilada donde un dado decide tu jornada'},
+  { title: "Tragones y mazmorras ", img: "https://pics.filmaffinity.com/dungeon_meshi-889102444-large.jpg",Pista:'En tierras de magia y espada afilada y comida a mucho'},
   { title: "Las ventajas de ser invisible", img: "https://m.media-amazon.com/images/M/MV5BYzM0MDI3MjQtZTc0MC00YzNlLWExYjUtNjFlOTg3NmI5ZWUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",Pista:'No me ves, pero estoy presente mi mente vuela, aunque soy adolescente Entre cartas' },
   { title: "Hilga", img: "https://m.media-amazon.com/images/M/MV5BYmI2ZGE3ODQtYzk1ZC00ZDY3LWI3YzItNjhiOGE2OTM3NjVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",Pista:'un man quema la casa de sus abuelo y se muda a la ciudad' },
   { title: "One pice", img: "https://m.media-amazon.com/images/M/MV5BMTNjNGU4NTUtYmVjMy00YjRiLTkxMWUtNzZkMDNiYjZhNmViXkEyXkFqcGc@._V1_.jpg",Pista:'el prota tiene un sombrero de paja ' },

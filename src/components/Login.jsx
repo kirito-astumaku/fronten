@@ -11,9 +11,15 @@ function Login() {
   const navigate = useNavigate();
 
   const Onsubmit = async (data) => {
-    setLoading(true);
+  setLoading(true);
+  try {
     await signin(data);
+  } catch (err) {
+    console.error("Error en login:", err);
+  } finally {
     setLoading(false);
+  }
+
   };
 
   useEffect(() => {
