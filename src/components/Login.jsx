@@ -9,18 +9,16 @@ function Login() {
   const {register, handleSubmit, formState:{errors}} = useForm()
   const {signin, isAuthenticated ,errors: signinErrors} = useAuth()
 
-  const Onsumit = async (data) => {
-  const success = await signin(data);
-  if (success) navigate("/");
-  window.location.reload();
-
+const Onsumit = async (data) => {
+  await signin(data);
 };
+
 
     const navigate = useNavigate();
 
-/*     useEffect(() => {
+    useEffect(() => {
         if(isAuthenticated) navigate("/");
-    },[isAuthenticated]) */
+    },[isAuthenticated]) 
 
   return (
     <div className="h-[calc(100vh-100px)] flex items-center bg-zinc-900 justify-center">

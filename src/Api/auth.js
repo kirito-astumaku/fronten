@@ -5,5 +5,3 @@ export const registerRequest = async (user) =>  await axios.post(`/register`, us
 export const loginRequest = user => axios.post(`/login`, user)
 
 export const verifyTokenRequest = async () =>  axios.get(`/verify`)
-
-export const documentUser = async () => axios.get(`/user`)
