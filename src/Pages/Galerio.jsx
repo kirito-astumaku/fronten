@@ -9,7 +9,7 @@ function Galerio() {
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
       {items.map((item, index) => (
-        <div key={index} className="relative">
+        <div key={index} className="">
           <img src={item.img} alt={item.title} className="rounded-lg w-full h-auto object-cover" />
         </div>
       ))}

@@ -60,7 +60,7 @@ const handleValidate = (index, correctTitle) => {
                  {items.map((items, index) => (
           <div key={index} className='mt-[1rem] px-4'>
          <img className='rounded-lg w-[90%]'  src={items.img} alt="" />
-        <h1 className=' top-[2%] left-[37%] text-xl bg-[rgba(0,0,0,0.535)] text-white rounded-lg inline-block '>
+        <h1 className=' text-xl bg-[rgba(0,0,0,0.535)] text-white rounded-lg inline-block '>
           {items.title}
         </h1>
 </div>
